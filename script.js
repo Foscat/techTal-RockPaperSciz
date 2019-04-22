@@ -27,16 +27,16 @@ var won = 0;
 var lost = 0;
 var draw = 0;
 
-console.log(chooseAnswer);
 
 function startGame() {
     var answer = computerAnswers[chooseAnswer];
     console.log(answer);
 
     if(yourAnswer === answer){
-        console.log("its a draw")
+        console.log("It's a draw")
         draw++
     }
+
     if (answer === "Rock"){
         if(yourAnswer === "Paper"){
             console.log("You win");

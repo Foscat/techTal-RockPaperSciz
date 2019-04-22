@@ -7,17 +7,17 @@ document.getElementById("start").addEventListener("click", startGame);
 var yourAnswer = null;
 
 function answerRock(){
-    console.log("Rock")
+    console.log("Your answer: Rock")
     yourAnswer = "Rock"
 }
 
 function answerPaper(){
-    console.log("Paper")
+    console.log("Your answwer: Paper")
     yourAnswer = "Paper"
 }
 
 function answerScissors(){
-    console.log("Scissors")
+    console.log("Your answwer: Scissors")
     yourAnswer = "Scissors"
 }
 

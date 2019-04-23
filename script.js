@@ -9,16 +9,25 @@ var yourAnswer = null;
 function answerRock(){
     console.log("Your answer: Rock")
     yourAnswer = "Rock"
+    document.getElementById("myAnswer").innerHTML = ("Your answer ~ " + yourAnswer);
 }
 
 function answerPaper(){
     console.log("Your answwer: Paper")
     yourAnswer = "Paper"
+    document.getElementById("myAnswer").innerHTML = ("Your answer ~ " + yourAnswer);
 }
 
 function answerScissors(){
     console.log("Your answwer: Scissors")
-    yourAnswer = "Scissors"
+    yourAnswer = "Scissors";
+    document.getElementById("myAnswer").innerHTML = ("Your answer ~ " + yourAnswer);
+}
+
+function updateScores(){
+    scoreCard = {won, lost, draw}
+    console.log("Update score:", scoreCard);
+    document.getElementById("scoreCard").innerHTML = ("Your scores: Wins~" + scoreCard.won + " Draws~" + scoreCard.draw + " Losses~" + scoreCard.lost);
 }
 
 var computerAnswers = ["Rock", "Paper", "Scissors"];
@@ -26,7 +35,7 @@ var chooseAnswer = Math.floor(Math.random()*3);
 var won = 0;
 var lost = 0;
 var draw = 0;
-
+var scoreCard = {won, lost, draw}
 
 function startGame() {
     var answer = computerAnswers[chooseAnswer];
@@ -68,6 +77,7 @@ function startGame() {
         }
     }
     chooseAnswer = Math.floor(Math.random()*3);
-    console.log("Wins:" + won, "Lost: " + lost, "Draws: " + draw)
+    console.log("Wins:" + won, "Losses: " + lost, "Draws: " + draw);
+    updateScores();
 }
 

@@ -10,32 +10,37 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     </head>
-    <body>
-        <div class="container">
+    <body  style="background-color: rgb(143, 73, 102)">
+        <div class="container"  style="background-color: rgb(206, 206, 206)">
 
             <div class="row">
-                <div class="row">
+                <div class="jumbotron">
                     <h2>
                         Select a answer by clicking "Rock", "Paper" or "Scissors" button the click "Start Game" 
                         to get computer answer
                     </h2>
+                    <hr>
                         
-                    <p>
-                        Check console for answers and score
-                    </p>
-            
+                    <h4 id="scoreCard">
+                        Score will display here.
+                    </h4>
+
+                    <h4 id="myAnswer">
+                        Your answer will be shown here.
+                    </h4>
+                    
                 </div>
                 
-                <div class="row" id="valBox">
-                    <button id="rock" type="button">Rock</button>
-                    <button id="paper" type="button">Paper</button>
-                    <button id="scissors" type="button">Scissors</button>
+                <div class="row m-1" id="valBox">
+                    <button class="btn btn-dark m-1" id="rock" type="button">Rock</button>
+                    <button class="btn btn-secondary m-1" id="paper" type="button">Paper</button>
+                    <button class="btn btn-info m-1" id="scissors" type="button">Scissors</button>
                 </div>
 
             </div>
             <hr>
-            <div class="row">
-                <button id="start" type="button">Start Game</button>
+            <div class="row m-2">
+                <button class="btn btn-primary m-1" id="start" type="button">Start Game</button>
             </div>
 
         </div>
